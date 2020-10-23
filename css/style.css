@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
+  overflow-x: hidden;
 }
 
 body{
@@ -29,6 +30,8 @@ aside{
   align-items: center;
   justify-content: space-around;
   transition: right linear 1.5s , opacity linear 1.8s;
+  max-height: 100vh;
+  flex-shrink: 0;
 }
 
 .show{
@@ -39,6 +42,7 @@ aside{
 ul{
   list-style: none;
   width: 50%;
+  overflow-x: auto;
 }
 
 li{
