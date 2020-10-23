@@ -1,7 +1,10 @@
 //Array name list
 
-var arr = ['Rossi' , 'Bianchi' , 'Verdi' , 'Tizio' ,  'Caio' , 'Duzioni', 'Balsano']
+var array = ['Rossi' , 'Bianchi' , 'Verdi' , 'Tizio' ,  'Caio' , 'Duzioni', 'Balsano']
 
+var list = [];
+
+var index = 0 ;
 //function for capitalize first letter of user input name;
 
 function upperCaseFirstLetter(name){
@@ -11,20 +14,20 @@ function upperCaseFirstLetter(name){
 //sorting function
 
 function sortArray(){
-  let startingArray = arr;
+  //populating new array;
+
+  while( index < array.length){
+    list.push(array[index]);
+    index++
+  }
+
   let userInput = document.querySelector('#nameinput');
+
   if (userInput.value != "") {
-
-
-  let name = upperCaseFirstLetter(userInput.value);
-
-  arr.push(name);
-
-  arr.sort();
-
-  console.log(arr);
-
-  userInput.value = "";
-  console.log('starting' + startingArray);
+    let name = upperCaseFirstLetter(userInput.value);
+    list.push(name);
+    list.sort();
+    userInput.value = "";
+    console.log(list);
   }
 }
