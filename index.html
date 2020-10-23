@@ -7,25 +7,29 @@
   </head>
   <body>
 
-    <aside class="">
+    <div class="container">
 
-      <ul id="list">
+      <!-- list aside -->
 
-      </ul>
+      <aside class="">
+        <ul id="list">
+        </ul>
+      </aside>
 
-    </aside>
+      <!-- input box -->
+
+      <form>
+        <input type="text" name="" value="" placeholder="inserisci qui il tuo nome">
+        <input type="text" id="nameinput" name="" value="" placeholder="inserisci qui il tuo cognome">
+        <button type="button" onclick="sortArray()" name="button"></button>
+        <span id="position"></span>
+        <button type="button" name="button" onclick="moving()">move</button>
+      </form>
+
+    </div>
 
 
-    <main>
-       <input type="text" name="" value="" placeholder="inserisci qui il tuo nome">
-       <input type="text" id="nameinput" name="" value="" placeholder="inserisci qui il tuo cognome">
-       <button type="button" onclick="sortArray()" name="button"></button>
-       <span id="position"></span>
-    </main>
-
-
-
-
+    <!-- script -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

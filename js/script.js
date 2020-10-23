@@ -42,4 +42,12 @@ function sortArray(){
       index++;
     }
   }
+  if(!display){
+    moving();
+  }
 };
+
+
+function moving(){
+  document.querySelector('aside').classList.toggle('show');
+}
