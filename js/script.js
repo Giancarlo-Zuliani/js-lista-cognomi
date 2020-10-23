@@ -4,7 +4,7 @@ var array = ['Rossi' , 'Bianchi' , 'Verdi' , 'Tizio' ,  'Caio' , 'Duzioni', 'Bal
 var list = [];
 //index
 var index = 0 ;
-
+var display = false;
 //function for capitalize first letter of user input name;
 function upperCaseFirstLetter(name){
   return name.charAt(0).toUpperCase() + name.slice(1);
@@ -41,9 +41,10 @@ function sortArray(){
       unorderedList.innerHTML += "<li>" + list[index] + "</li>";
       index++;
     }
-  }
-  if(!display){
-    moving();
+    if(!display){
+      moving()
+      display = true;
+    }
   }
 };
 
