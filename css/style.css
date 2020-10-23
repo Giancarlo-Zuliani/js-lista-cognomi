@@ -41,8 +41,9 @@ aside{
 
 ul{
   list-style: none;
-  width: 50%;
+  width: 100%;
   overflow-x: auto;
+  max-height: 80%;
 }
 
 li{
@@ -55,8 +56,6 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:
-
 }
 
 button{
@@ -66,7 +65,6 @@ button{
   margin-top:25px;
   border-radius: 15px;
   padding: 5px 15px;
-
 }
 
 input{
