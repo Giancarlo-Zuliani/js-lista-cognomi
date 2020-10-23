@@ -53,7 +53,7 @@ function sortArray(){
       moving()
       display = true;
     }
-    document.getElementById('unorderednum').innerHTML = array.length + 1 ;
+    document.getElementById('unorderednum').innerHTML = array.length  ;
   }
 };
 
