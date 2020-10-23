@@ -26,25 +26,34 @@ function sortArray(){
     let name = upperCaseFirstLetter(userInput.value);
     //insert the new string into array
     list.push(name);
+    array.push(name);
     //sort;
     list.sort();
     //clear textfield;
     userInput.value = "";
     //clear list;
-    let unorderedList = document.getElementById('list');
+    let uList = document.getElementById('list');
     //find index number of new string;
     let position = list.indexOf(name) + 1 ;
-    document.getElementById('position').innerHTML = position;
+    document.getElementById('orderednum').innerHTML = position;
     //while cicle for print out list item;
-    unorderedList.innerHTML = "";
+    uList.innerHTML = "";
     while(index < list.length){
-      unorderedList.innerHTML += "<li>" + list[index] + "</li>";
+      uList.innerHTML += "<li>" + list[index] + "</li>";
+      index++;
+    }
+    index=0;
+    ul = document.getElementById('unlist');
+    ul.innerHTML ="";
+    while(index < array.length){
+      ul.innerHTML += "<li>" + array[index] + "</li>";
       index++;
     }
     if(!display){
       moving()
       display = true;
     }
+    document.getElementById('unorderednum').innerHTML = array.length + 1 ;
   }
 };
 
